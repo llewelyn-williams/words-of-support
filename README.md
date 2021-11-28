@@ -23,9 +23,6 @@ Write some words of support for topics you or others have added.
 ![Image showing the project displaying responsively on different device types.](assets/readme-images/responsive-mockup.png)
 
 ## Table of Contents
-- [Features](#features)
-  * [Current Features](#current-features)
-  * [Future Features](#future-features)
 - [User Experience Design](#user-experience-design)
   * [Strategy](#strategy)
   * [Scope](#scope)
@@ -35,6 +32,9 @@ Write some words of support for topics you or others have added.
     + [Navigation Tree](#navigation-tree)
     + [Wireframes](#wireframes)
   * [Surface](#surface)
+- [Features](#features)
+  * [Current Features](#current-features)
+  * [Future Features](#future-features)
 - [Technologies Used](#technologies-used)
   * [Languages](#languages)
   * [Libraries](#libraries)
@@ -46,59 +46,6 @@ Write some words of support for topics you or others have added.
   * [Content](#content)
   * [Media](#media)
   * [Thanks](#thanks)
-
-
-## Features
-
-Features of project
-
-### Current Features
-These features have been implemented in the project.
-
- - Feature
-	 * Feature detail.
-	 * Feature detail.
-	 
-![Feature Image](assets/readme-images/#)
-
- - Feature
-	 * Feature detail.
-	 * Feature detail.
-	 
-![Feature Image](assets/readme-images/#)
-
- - Feature
-	 * Feature detail.
-	 * Feature detail.
-	 
-![Feature Image](assets/readme-images/#)
-
- - Feature
-	 * Feature detail.
-	 * Feature detail.
-	 
-![Feature Image](assets/readme-images/#)
-
-
-### Future Features
-Possible features to be considered for future releases.
- - Feature
-	 * Feature detail.
-	 * Feature detail.
-
- - Feature
-	 * Feature detail.
-	 * Feature detail.
-     * Feature detail.
-
- - Feature
-	 * Feature detail.
- 
- - Feature
-	 * Feature detail.
-
- - Feature
-	 * Feature detail.
 
 ## User Experience Design
 
@@ -152,6 +99,59 @@ The complete set of wireframes can be viewed via these images:
 
 Surface considerations. 
 
+
+## Features
+
+Features of project
+
+### Current Features
+These features have been implemented in the project.
+
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+	 
+![Feature Image](assets/readme-images/#)
+
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+	 
+![Feature Image](assets/readme-images/#)
+
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+	 
+![Feature Image](assets/readme-images/#)
+
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+	 
+![Feature Image](assets/readme-images/#)
+
+
+### Future Features
+Possible features to be considered for future releases.
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+     * Feature detail.
+
+ - Feature
+	 * Feature detail.
+ 
+ - Feature
+	 * Feature detail.
+
+ - Feature
+	 * Feature detail.
+     
 
 ## Technologies Used
 ### Languages
