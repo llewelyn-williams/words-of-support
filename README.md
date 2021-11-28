@@ -9,8 +9,8 @@ If you are contributing to Words of Support you are potentially providing direct
 Looking at the ['5 steps to wellbeing'](https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/) on the NHS website, we're ticking at least two (maybe three?) of those boxes.
 1. Connect with other people :heavy_check_mark:
 2. Be physically active
-3. Learn new skills :heavy_check_mark:
-4. Give to others
+3. Learn new skills 
+4. Give to others :heavy_check_mark:
 5. Pay attention to the present moment (mindfulness) :white_check_mark:
 
 Try it yourself.  
