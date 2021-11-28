@@ -71,7 +71,7 @@ The frontend design shall be inviting and intuitive, allowing the user access to
 Server side logic will control access to the database and what will be presented on the front end. Through use of functions and compound statements appropriate data from the database will be married with HTML to display to the user.
 A document orientated database will house the data inputted by the users to be managed via the frontend.
 
-Topics(issues someone may be struggling with) will be paired with supportive words (user submitted text, examples of "What would you say to someone experiencing this issue?").
+Topics (issues someone may be struggling with) will be paired with supportive words (user submitted text, examples of "What would you say to someone experiencing this issue?").
 Users will be able to find supportive words by their attached topic, as well as submit both new topics and supportive words.
 Users will also be able to manage the content that they have submitted themselves by logging in and reviewing a personal history of submissions.
 
