@@ -16,7 +16,7 @@ Looking at the ['5 steps to wellbeing'](https://www.nhs.uk/mental-health/self-he
 Try it yourself.  
 Add a topic that you or someone else might be struggling with.  
 See what topics people are struggling with.  
-Write some words for support for topics you or others have added.
+Write some words of support for topics you or others have added.
 
 **The live project is available on Heroku: [Words of Support](#)**
 
