@@ -52,12 +52,22 @@ Write some words of support for topics you or others have added.
 
 ### Strategy
 
-Strategy information.
+*Words of Support*'s aim is provide positive cognitive value to it's users. It should serve as an opportunity for mindful interaction with positive ideas.
+Value is to be obtained by:
+- Finding submitted words of support for a given topic  
+Reading custom messages written for a given subject can provide reassurance to the user.
+- Writing custom messages got a given topic  
+Sharing kind words for others is part of the [steps to wellbeing](https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/).
+>  - creating positive feelings and a sense of reward
+>  - giving you a feeling of purpose and self-worth
+>  - helping you connect with other people
 
+More and more have we become aware of the importance of mental health. *Words of Support* can provide a way to place some focus on the importance of a caring attitude and kind words.
 
 ### Scope
 
-Scope Information
+General project scope as well as technical scope.
+What will be covered (what does it do?), how far will it go?
 
 #### User Stories
 
