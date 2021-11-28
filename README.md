@@ -1,108 +1,250 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Words of Support
 
-Welcome USER_NAME,
+Summary of project.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+**The live project is available on Heroku: [Words of Support](#)**
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Image showing the project displaying responsively on different device types.](assets/readme-images/responsive-mockup.png)
 
-## Gitpod Reminders
+## Table of Contents
+- [Features](#features)
+  * [Current Features](#current-features)
+  * [Future Features](#future-features)
+- [User Experience Design](#user-experience-design)
+  * [Strategy](#strategy)
+  * [Scope](#scope)
+    + [User Stories](#user-stories)
+  * [Structure](#structure)
+  * [Skeleton](#skeleton)
+    + [Navigation Tree](#navigation-tree)
+    + [Wireframes](#wireframes)
+  * [Surface](#surface)
+- [Technologies Used](#technologies-used)
+  * [Languages](#languages)
+  * [Libraries](#libraries)
+  * [APIs](#apis)
+  * [Other Services and Software](#other-services-and-software)
+- [Testing](#testing)
+- [Deployment Instructions](#deployment-instructions)
+- [Acknowledgements](#acknowledgements)
+  * [Content](#content)
+  * [Media](#media)
+  * [Thanks](#thanks)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## Features
 
-A blue button should appear to click: _Make Public_,
+Features of project
 
-Another blue button should appear to click: _Open Browser_.
+### Current Features
+These features have been implemented in the project.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+	 
+![Feature Image](assets/readme-images/#)
 
-A blue button should appear to click: _Make Public_,
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+	 
+![Feature Image](assets/readme-images/#)
 
-Another blue button should appear to click: _Open Browser_.
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+	 
+![Feature Image](assets/readme-images/#)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+	 
+![Feature Image](assets/readme-images/#)
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Future Features
+Possible features to be considered for future releases.
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+ - Feature
+	 * Feature detail.
+	 * Feature detail.
+     * Feature detail.
 
-------
+ - Feature
+	 * Feature detail.
+ 
+ - Feature
+	 * Feature detail.
 
-## Release History
+ - Feature
+	 * Feature detail.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## User Experience Design
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Strategy
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Strategy information.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Scope
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Scope Information
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### User Stories
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+| Scenario | Requirements  |
+|----------|---------------|
+| **As a xxxxx**, I want ... scenario. | Requirement. |
+| Scenario | Requirement.|
+| Scenario | Requirement.|
+| **As a xxxxx**, I want ... scenario. | Requirement. |
+| Scenario | Requirement.|
+| Scenario | Requirement.|
+| **As a xxxxx**, I want ... scenario. | Requirement. |
+| Scenario | Requirement.|
+| Scenario | Requirement.|
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Structure
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Structure Information
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Skeleton
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Navigation Tree
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Diagram showing the navigation flow](assets/wireframes/#)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Wireframes
 
-------
+Wireframes showing layout plans for different devices.
 
-## FAQ about the uptime script
+![An image previewing some of the wireframes made for the project](assets/wireframes/wireframes.png)
 
-**Why have you added this script?**
+The complete set of wireframes can be viewed via these images:
+ - [Mobile Wireframes](assets/wireframes/mobile-wireframes.png)
+ - [Tablet Wireframes](assets/wireframes/tablet-wireframes.png)
+ - [Desktop Wireframes](assets/wireframes/desktop-wireframes.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+### Surface
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Surface considerations. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Technologies Used
+### Languages
+ - HTML 
+ - CSS
+ - JavaScript
+ - xxxxx
+ - xxxxx
 
-**So….?**
+### Libraries
+ - [jQuery](https://jquery.com/)
+ - [Link](#)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+ ### APIs
+ - [Link](#)
+ 
+### Other Services and Software
+ - Git
+ 	 - Version control.
+ - GitHub
+ 	 - Cloud-based storage and deployment via GitHub Pages.
+ - GitPod
+ 	 - IDE.
+ - [StackEdit](https://stackedit.io)
+	 - Used to assist in the planning and creation of this README markdown file.
+ - [markdown-toc](https://ecotrust-canada.github.io/markdown-toc)
+	 - Used to generate table of contents in markdown for this README markdown file.
+ - [Link](#)
+	 - For xxxxx.
+ - [Link](#)
+	 - For xxxxx.
+ - [Link](#)
+	 - For xxxxx.
+ - [Link](#)
+	 - For xxxxx.
+ - [Link](#)
+	 - For xxxxx.
+ - [Link](#)
+	 - For xxxxx.
 
-**Can I opt out?**
+## Testing
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+See separate [TESTING.md](TESTING.md)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+## Deployment Instructions
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Forking a Repository
+1. Navigate to GitHub Repository
+2. Use the **Fork** link (node tree icon) from the top right of the page justunder the header.
+3. You now have a copy of the repository among your own.
 
----
+[Further Instruction](https://help.github.com/articles/fork-a-repo)
 
-Happy coding!
+Cloning a Repository
+1. Navigate to GitHub Repository
+2. Use the **Code** dropdown button from just above the repository on the right.
+3. Copy the relevant address or command to use as instructed with your chosen method.
+4. For example in Git Bash use the command `$ git clone https://github.com/`**github-username**`/`**repository-name**
+5. You now have a local copy of the Repository in the directory where you ran the command.
+
+[Further Instruction](https://help.github.com/articles/cloning-a-repository/)
+
+GitHubPages
+
+ 1. Navigate to GitHub Repository
+ 2. Use the **Settings** link (cog icon) from the menu atop the repository.
+ 3. Use the **Pages** link from the left hand navigation menu.
+ 4. Select **Branch: master** as the source.
+ 5. Click **Save**
+ 6. The site can be found at the address `https://`**github-username**`.github.io/`**repository-name**
+
+[Further Instruction](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
+
+## Acknowledgements
+
+### Content
+
+Reused or inspired code from the following sources:
+ - [StackOverflow Questions & Answers](https://stackoverflow.com/questions/) various, links to specifics in code.
+ - [Medium](https://medium.com/) linked to specific in code.
+
+ Used for referencing:
+ - [MDN Web Docs](https://developer.mozilla.org/en-US/)
+ - [W3 Schools](https://www.w3schools.com/)
+
+### Media
+
+ - [Link](#) by [Name](#)
+ used as XXXX.
+ - [Link](#) by [Name](#)
+ used as XXXX.
+ - [Link](#) by [Name](#)
+ used as XXXX.
+ - [Link](#) by [Name](#)
+ used as XXXX.
+ - [Link](#) by [Name](#)
+ used as XXXX.
+ - [Link](#) by [Name](#)
+ used as XXXX.
+ - [Link](#) by [Lia-Aramburu](https://www.vecteezy.com/members/lia-aramburu) via [Name](#)
+ used as xxxxx.
+ - [Link](#) by [Lia-Aramburu](https://www.vecteezy.com/members/lia-aramburu) via [Name](#)
+ used as xxxxx.
+ - Mockups Screenshot from [Am I Responsive](http://ami.responsivedesign.is/)
+ - Emoji used for favicon.ico is part of [Twemoji](https://twemoji.twitter.com/)
+
+### Thanks
+
+ - Code Institute
+ - My Code Institute Mentor
+ - My Long Suffering Partner
