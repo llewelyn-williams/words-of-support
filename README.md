@@ -2,7 +2,7 @@
 
 How we talk to ourselves and the words we use have a huge impact on the way we feel. It isn't always the easiest to talk compassionately to yourself. There can be a tendency to talk ourselves down in our own heads. However, the same harsh words we might tell ourselves are highly unlikely to be the way we would address someone else. It can often be easier to imagine "What would you say to someone else?" when trying to find kind words for yourself.
 
-By imagining the other it can be easier to place yourself in a caring, supportive position and find the appropriate words. Words of Support aim is to provide a platform for that type of engagement. Helping people reduce the space for negative ways of addressing themselves by experiencing more positive ones, either by reading supportive words submitted by others, or by crafting words designed to by supportive of others.
+By imagining the other it can be easier to place yourself in a caring, supportive position and find the appropriate words. Words of Support's aim is to provide a platform for that type of engagement. Helping people reduce the space for negative ways of addressing themselves by experiencing more positive ones, either by reading supportive words submitted by others, or by crafting words designed to by supportive of others.
 
 If you are contributing to Words of Support you are potentially providing direct support to someone or many people who need it, something that in itself is helpful to your own wellbeing.
 
