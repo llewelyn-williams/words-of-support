@@ -79,15 +79,15 @@ Users will also be able to manage the content that they have submitted themselve
 
 | Scenario | Requirements  |
 |----------|---------------|
-| **As a xxxxx**, I want ... scenario. | Requirement. |
-| Scenario | Requirement.|
-| Scenario | Requirement.|
-| **As a xxxxx**, I want ... scenario. | Requirement. |
-| Scenario | Requirement.|
-| Scenario | Requirement.|
-| **As a xxxxx**, I want ... scenario. | Requirement. |
-| Scenario | Requirement.|
-| Scenario | Requirement.|
+| **As a person struggling with negative self thoughts**, I want to read uplifting comments that help me have more positive thoughts. | Requirement. |
+| I want to be able to see comments specific to particular issues. | Requirement.|
+| I want to be able to specify which particular issue I want to see comments related to. | Requirement.|
+| **As a person wanting to be more actively positive**, I want write something positive. | Requirement. |
+| I want other people to be able to have the opportunity to gain value from whatI write.  | Requirement.|
+| I want whatI write to be meaningful for people. | Requirement.|
+| **As user**, I want to be able to retain control over the content that I provide. | Requirement. |
+| I want to be able to gain access to see what I have submitted. | Requirement.|
+| I want to be able to update or delete the content that I have submitted. | Requirement.|
 
 ### Structure
 
