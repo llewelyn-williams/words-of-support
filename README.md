@@ -20,7 +20,7 @@ Write some words of support for topics you or others have added.
 
 **The live project is available on Heroku: [Words of Support](#)**
 
-![Image showing the project displaying responsively on different device types.](assets/readme-images/responsive-mockup.png)
+![Image showing the project displaying responsively on different device types.](assets/readme-images/iamresponsive.png)
 
 ## Table of Contents
 - [User Experience Design](#user-experience-design)
