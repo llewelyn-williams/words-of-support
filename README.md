@@ -79,15 +79,15 @@ Users will also be able to manage the content that they have submitted themselve
 
 | Scenario | Requirements  |
 |----------|---------------|
-| **As a person struggling with negative self thoughts**, I want to read uplifting comments that help me have more positive thoughts. | Requirement. |
-| I want to be able to see comments specific to particular issues. | Requirement.|
-| I want to be able to specify which particular issue I want to see comments related to. | Requirement.|
-| **As a person wanting to be more actively positive**, I want write something positive. | Requirement. |
-| I want other people to be able to have the opportunity to gain value from what I write.  | Requirement.|
-| I want whatI write to be meaningful for people. | Requirement.|
+| **As a person struggling with negative self thoughts**, I want to read uplifting comments that help me have more positive thoughts. | There should be these type of comments and they need to be simple to access. |
+| I want to be able to see comments specific to particular issues. | The content filtered in some way by issue.|
+| I want to be able to specify which particular issue I want to see comments related to. | A way for the user to find content that they're looking for.|
+| **As a person wanting to be more actively positive**, I want write something positive. | The ability to submit content. |
+| I want other people to be able to have the opportunity to gain value from what I write.  | The content submitted by users need to be discoverable by other users.|
+| I want what I write to be meaningful for people. | To provide a context where people can have access to the content provided in a way that can benefit them.|
 | **As user**, I want to be able to retain control over the content that I provide. | Requirement. |
-| I want to be able to gain access to see what I have submitted. | Requirement.|
-| I want to be able to update or delete the content that I have submitted. | Requirement.|
+| I want to be able to gain access to see what I have submitted. | A form of user access.|
+| I want to be able to update or delete the content that I have submitted. | User limited content control facility.|
 
 ### Structure
 
