@@ -29,6 +29,7 @@ Write some words of support for topics you or others have added.
     + [User Stories](#user-stories)
   * [Structure](#structure)
   * [Skeleton](#skeleton)
+	+ [Database Design](#database-design)
     + [Navigation Tree](#navigation-tree)
     + [Wireframes](#wireframes)
   * [Surface](#surface)
@@ -91,9 +92,27 @@ Users will also be able to manage the content that they have submitted themselve
 
 ### Structure
 
-Structure Information
+The project will make us of a document database with Mongo DB in order to store content and user account information.
+Information will be presented across web pages an data collected using forms. A navigation menu will allow users to select specific actions and there will be pathways between pages to perform the different steps of some of the actions, such as collecting and then displaying information.
 
 ### Skeleton
+
+There are three related collections within the database.
+1. Users  
+Contains the user account information that will facilitate access restrictions to how and when users can add, delete or update from the database.
+2. Topics  
+Contains the subjects that people might be experiencing issues with that users will be able to see and provide supportive words associated to that subject.
+3. Words  
+Contains the supportive words submitted by the users.
+
+Despite the use of a document database there are be relationships between the collections, enforced via Python logic.
+There are two types of relationship:
+1. Both topics and words will have a single associated user who has created them.
+2. Words will have a single associated topic.
+
+#### Database Design
+
+![Diagram showing the database design](assets/readme-images/database-diagram.png)
 
 #### Navigation Tree
 
