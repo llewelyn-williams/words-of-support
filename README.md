@@ -124,9 +124,10 @@ The navigation menu will appear differently depending on if a user is logged in 
 |----------|---------------|---------------|
 | Home | :heavy_check_mark: | :heavy_check_mark: |
 | Read | :heavy_check_mark: | :heavy_check_mark: |
-| Write | :heavy_check_mark: (re-directs to log in) | :heavy_check_mark: |
-| Add Topic | :heavy_check_mark: (re-directs to log in) | :heavy_check_mark: |
+| Write | :heavy_check_mark: (redirects to Log In) | :heavy_check_mark: |
+| Add Topic | :heavy_check_mark: (redirects to Log In) | :heavy_check_mark: |
 | Profile | :x: | :heavy_check_mark: |
+| Sign Up | :heavy_check_mark: | :x: |
 | Log In | :heavy_check_mark: | :x: |
 | Log Out | :x: | :heavy_check_mark: |
 
