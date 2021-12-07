@@ -30,7 +30,7 @@ Write some words of support for topics you or others have added.
   * [Structure](#structure)
   * [Skeleton](#skeleton)
 	+ [Database Design](#database-design)
-    + [Navigation Tree](#navigation-tree)
+    + [Sitemap](#sitemap)
     + [Wireframes](#wireframes)
   * [Surface](#surface)
 - [Features](#features)
@@ -114,9 +114,25 @@ There are two types of relationship:
 
 ![Diagram showing the database design](assets/readme-images/database-diagram.png)
 
-#### Navigation Tree
+Navigation will be via two main forms. Either through direct access to desired pages via the menu for those more familiar with the site, or through the navigation flow offered by the content on the pages.
+The main page will offer two pathways into the site marked by the users desired interest to either read/find supportive words (access data form the database) or contribute supportive words (add or manage data in the database).
+Taking either path with have opportunities to jump to the other and also prompt users to log in where required.
+Users will be able to read content, but will need to be logged in to submit content.
 
-![Diagram showing the navigation flow](assets/readme-images/sitemap.svg)
+The navigation menu will appear differently depending on if a user is logged in or not.
+| Menu Item | Not Logged In | Logged In |
+|----------|---------------|---------------|
+| Home | :heavy_check_mark: | :heavy_check_mark: |
+| Read | :heavy_check_mark: | :heavy_check_mark: |
+| Write | :heavy_check_mark: (re-directs to log in) | :heavy_check_mark: |
+| Add Topic | :heavy_check_mark: (re-directs to log in) | :heavy_check_mark: |
+| Profile | :x: | :heavy_check_mark: |
+| Log In | :heavy_check_mark: | :x: |
+| Log Out | :x: | :heavy_check_mark: |
+
+#### Sitemap
+
+![Diagram showing the different webpages](assets/readme-images/sitemap.svg)
 
 #### Wireframes
 
