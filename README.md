@@ -116,7 +116,7 @@ There are two types of relationship:
 
 #### Navigation Tree
 
-![Diagram showing the navigation flow](assets/wireframes/#)
+![Diagram showing the navigation flow](assets/readme-images/sitemap.svg)
 
 #### Wireframes
 
