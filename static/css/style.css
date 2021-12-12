@@ -1,3 +1,6 @@
-body {
-    background-color: blue;
+.text-shadow {
+    text-shadow: 2px 2px 3px #0e4700;
+}
+.app-heading{
+    font-family: 'Merienda One', cursive;
 }

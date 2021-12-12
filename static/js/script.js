@@ -1,1 +1,3 @@
-console.log("Testing 1,2,3 ...");
+$(document).ready(function(){
+    $('.sidenav').sidenav({edge: "right"});
+  });
