@@ -28,8 +28,8 @@ def topics():
     Display home page.
     """
 
-    topics = mongo.db.topics.find()
-    return render_template("topics.html", topics=topics)
+    my_topics = mongo.db.topics.find()
+    return render_template("topics.html", topics=my_topics)
 
 
 if __name__ == "__main__":
