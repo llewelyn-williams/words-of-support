@@ -7,11 +7,9 @@
     <title>Words of Support</title>
 </head>
 <body>
-    {% for issue in issues %}
-        {{ issue.topic }}<br>
-        {{ issue.topic_creation_date }}<br>
-        {{ issue.topic_creator }}<br>
-        <hr>
-    {% endfor %}
+    <h1>Words of Support</h1>
+    {% block content %}
+        
+    {% endblock %}
 </body>
 </html>

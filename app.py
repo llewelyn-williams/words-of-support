@@ -22,14 +22,14 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/home")
-def home():
+@app.route("/topics")
+def topics():
     """
     Display home page.
     """
 
-    issues = mongo.db.topics.find()
-    return render_template("home.html", issues=issues)
+    topics = mongo.db.topics.find()
+    return render_template("topics.html", topics=topics)
 
 
 if __name__ == "__main__":
