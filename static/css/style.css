@@ -1,6 +1,28 @@
 .text-shadow {
     text-shadow: 2px 2px 3px #0e4700;
 }
-.app-heading{
+nav .app-heading{
     font-family: 'Merienda One', cursive;
+    font-size: small;
+}
+
+@media only screen and (min-width: 356px) {
+    nav .app-heading{
+        font-family: 'Merienda One', cursive;
+        font-size: large;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    nav .app-heading{
+        font-family: 'Merienda One', cursive;
+        font-size: x-large;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    nav .app-heading{
+        font-family: 'Merienda One', cursive;
+        font-size: xx-large;
+    }
 }
