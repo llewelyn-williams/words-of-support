@@ -6,6 +6,11 @@ nav .app-heading{
     font-size: small;
 }
 
+.flashes h4 {
+    color: #8F3B0A;
+    line-height: 2;
+}
+
 @media only screen and (min-width: 356px) {
     nav .app-heading{
         font-family: 'Merienda One', cursive;
