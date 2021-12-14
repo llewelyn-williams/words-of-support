@@ -21,7 +21,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
+    
 @app.route("/")
 @app.route("/topics")
 def topics():
@@ -29,7 +29,7 @@ def topics():
     Display home page.
     """
 
-    my_topics = mongo.db.topics.find()
+    my_topics = list(mongo.db.topics.find())
     return render_template("topics.html", topics=my_topics)
 
 
