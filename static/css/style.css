@@ -11,6 +11,10 @@ nav .app-heading{
     line-height: 2;
 }
 
+.home-card {
+    height: 100%;
+}
+
 @media only screen and (min-width: 356px) {
     nav .app-heading{
         font-family: 'Merienda One', cursive;
