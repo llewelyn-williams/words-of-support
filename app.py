@@ -130,6 +130,10 @@ def profile(username):
 
 @app.route("/logout")
 def logout():
+    """
+    Handle Logout Functionality.
+    """
+
     # remove user and email from session cookies
     flash("You have been logged out.")
     session.pop("user_email")
