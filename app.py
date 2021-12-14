@@ -35,6 +35,10 @@ def topics():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """
+    Handle Sign Up Page and Functionality.
+    """
+
     if request.method == "POST":
         # check if the supplied username or email is already in the database
         existing_user = mongo.db.users.find_one(
@@ -65,11 +69,16 @@ def register():
         # put the new user into a 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("You have been Signed Up Successfully.")
+        return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
 
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """
+    Handle Sign In Page and Functionality.
+    """
+
     if request.method == "POST":
         # check if email is in the database
         existing_user = mongo.db.users.find_one(
@@ -78,8 +87,10 @@ def login():
         if existing_user:
             #make sure hashed password matches user input
             if check_password_hash(existing_user["password"], request.form.get("password")):
-                session["user"] = request.form.get("email").lower()
+                session["user_email"] = request.form.get("email").lower()
+                session["user"] = existing_user["username"]
                 flash("Signed in with the email: {}".format(request.form.get("email")))
+                return redirect(url_for("profile", username=session["user"]))
             else:
                 # password doesn't match
                 flash("Email and/or password incorrect.")
@@ -91,6 +102,18 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("login.html")
+
+
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+    """
+    Handle Profile Page and Functionality.
+    """
+
+    # get the session user's usename fom the database
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    return render_template("profile.html", username=username)
 
 
 if __name__ == "__main__":
