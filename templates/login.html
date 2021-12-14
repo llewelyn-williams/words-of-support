@@ -2,8 +2,8 @@
 {% block content %}
 
     <div class="row">
-        <h3 class="center-align">Sign Up</h3>
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+        <h3 class="center-align">Sign In</h3>
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
             <div class="card-panel">
                 <!-- Email -->
                 <div class="row">
@@ -14,15 +14,6 @@
                             pattern="^((([!#$%&'*+\-/=?^_`{|}~\w])|([!#$%&'*+\-/=?^_`{|}~\w][!#$%&'*+\-/=?^_`{|}~\.\w]{0,}[!#$%&'*+\-/=?^_`{|}~\w]))[@]\w+([-.]\w+)*\.\w+([-.]\w+)*)$"
                             class="validate" required>
                         <label for="email">Email</label>
-                    </div>
-                </div>
-                <!-- Username -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-user-plus prefix"></i>
-                        <input id="username" name="username" type="text" minlength="5" maxlength="15"
-                            pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-                        <label for="username">Username</label>
                     </div>
                 </div>
                 <!-- Password -->
@@ -37,7 +28,7 @@
                 <!-- Sign Up -->
                 <div class="row">
                     <button type="submit" class="col s12 btn-large">
-                        Sign Up <i class="fas fa-sign-in-alt"></i>
+                        Sign In <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </div>
             </div>
@@ -47,8 +38,8 @@
     <div class="row">
         <div class="col s12">
             <p class="center-align">
-                Already signed up?
-                <a href="{{ url_for('login') }}">Sign In Here</a>
+                Haven't signed up yet?
+                <a href="{{ url_for('register') }}">Sign Up Here</a>
             </p>
         </div>
     </div>
