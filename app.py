@@ -62,10 +62,10 @@ def write():
 def add():
     """
     Display add topic page.
+    Handle submission to the supportive_words collection
     """
 
     if request.method == "POST":
-        print("POST Request sent.")
         words = {
             "words": request.form.get("words"),
             "words_creator": session["user"],
@@ -73,11 +73,8 @@ def add():
             "words_rating": 2.5,
             "topic_id": ""
         }
-        print("Words dict created")
         mongo.db.supportive_words.insert_one(words)
-        print("words sent to databse")
-        flash("Thank you foryour kind words.")
-        print("Flash message displayed")
+        flash("Thank you for your kind words.")
 
     return render_template("add.html")
 
