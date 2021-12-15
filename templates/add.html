@@ -2,13 +2,30 @@
 {% block content %}
 
     <div class="row">
-        <div class="col s6 home-card">
+        <div class="col s6 offset-s3 home-card">
             <div class="card-panel teal center-align">
                 <span class="white-text">
                     Add
                 </span>
             </div>
         </div>
+    </div>
+
+    <div class="row">
+        <form class="col s12" method="POST" action="{{ url_for('add') }}">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-edit prefix"></i>
+                    <textarea class="materialize-textarea" id="words" name="words" cols="30" rows="10" minlength="5" maxlength="500" required></textarea>
+                    <label for="words">supportive words...</label>
+                </div>
+            </div>
+            <div class="row center-align">
+                <button type="submit">
+                    Submit <i class="fas fa-arrow-circle-right"></i>
+                </button>
+            </div>
+        </form>
     </div>
 
 {% endblock %}

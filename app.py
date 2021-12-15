@@ -9,6 +9,7 @@ from flask import (
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
+import datetime
 if os.path.exists("env.py"):
     import env
 
@@ -46,15 +47,37 @@ def write():
     """
     Display write page.
     """
-    
-    return render_template("write.html")
+
+    # if check that there is a session user 
+    try:
+        if session["user"]:
+            return render_template("write.html")
+    # if there is a KeyError because there is no session user
+    except KeyError:
+        flash("Please sign in to be able to submit content.")
+        return redirect(url_for("login"))
 
 
-@app.route("/add")
+@app.route("/add", methods=["GET", "POST"])
 def add():
     """
     Display add topic page.
     """
+
+    if request.method == "POST":
+        print("POST Request sent.")
+        words = {
+            "words": request.form.get("words"),
+            "words_creator": session["user"],
+            "words_creation_date": datetime.datetime.utcnow(),
+            "words_rating": 2.5,
+            "topic_id": ""
+        }
+        print("Words dict created")
+        mongo.db.supportive_words.insert_one(words)
+        print("words sent to databse")
+        flash("Thank you foryour kind words.")
+        print("Flash message displayed")
 
     return render_template("add.html")
 
