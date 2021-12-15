@@ -29,10 +29,10 @@
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     {% endif %}
-                    <li><a href="#">Read</a></li>
-                    <li><a href="#">Write</a></li>
+                    <li><a href="{{ url_for('read') }}">Read</a></li>
+                    <li><a href="{{ url_for('write') }}">Write</a></li>
                     {% if session.user %}
-                        <li><a href="{{ url_for('topics') }}">Add Topic</a></li>
+                        <li><a href="{{ url_for('add') }}">Add Topic</a></li>
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
                         <li><a href="{{ url_for('login') }}">Sign In</a></li>
@@ -48,10 +48,10 @@
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             {% endif %}
-            <li><a href="#">Read</a></li>
-            <li><a href="#">Write</a></li>
+            <li><a href="{{ url_for('read') }}">Read</a></li>
+            <li><a href="{{ url_for('write') }}">Write</a></li>
             {% if session.user %}
-                <li><a href="{{ url_for('topics') }}">Add Topic</a></li>
+                <li><a href="{{ url_for('add') }}">Add Topic</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}">Sign In</a></li>

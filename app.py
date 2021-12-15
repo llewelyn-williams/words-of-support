@@ -32,6 +32,33 @@ def home():
     return render_template("home.html")
 
 
+@app.route("/read")
+def read():
+    """
+    Display read page.
+    """
+
+    return render_template("read.html")
+
+
+@app.route("/write")
+def write():
+    """
+    Display write page.
+    """
+    
+    return render_template("write.html")
+
+
+@app.route("/add")
+def add():
+    """
+    Display add topic page.
+    """
+
+    return render_template("add.html")
+
+
 @app.route("/topics")
 def topics():
     """
@@ -57,7 +84,8 @@ def register():
             {"email": request.form.get("email").lower()})
 
         if existing_user:
-            flash("The supplied username is already in use. Please try another.")
+            flash(
+                "The supplied username is already in use. Please try another.")
             return redirect(url_for("register"))
 
         if existing_email:
@@ -71,7 +99,7 @@ def register():
             "password": generate_password_hash(request.form.get("password"))
         }
 
-        #TO-DO password confirmation field.
+        # TO-DO password confirmation field.
 
         mongo.db.users.insert_one(register)
 
@@ -94,11 +122,13 @@ def login():
             {"email": request.form.get("email").lower()})
 
         if existing_user:
-            #make sure hashed password matches user input
-            if check_password_hash(existing_user["password"], request.form.get("password")):
+            # make sure hashed password matches user input
+            if check_password_hash(
+                    existing_user["password"], request.form.get("password")):
                 session["user_email"] = request.form.get("email").lower()
                 session["user"] = existing_user["username"]
-                flash("Signed in with the email: {}".format(request.form.get("email")))
+                flash("Signed in with the email: {}".format(
+                    request.form.get("email")))
                 return redirect(url_for("profile", username=session["user"]))
             else:
                 # password doesn't match
@@ -106,7 +136,7 @@ def login():
                 return redirect(url_for("login"))
 
         else:
-            #username not found
+            # username not found
             flash("Email and/or password incorrect.")
             return redirect(url_for("login"))
 
@@ -122,10 +152,13 @@ def profile(username):
     # get the session user's usename fom the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
-
+    
+    # only go to the profile page if there is a session user
     if session["user"]:
-        return redirect(url_for("login"))
+        return render_template("profile.html", username=username)
+
+    # otherwise redirect users to the login page
+    return redirect(url_for("login"))
 
 
 @app.route("/logout")
