@@ -18,7 +18,7 @@ Add a topic that you or someone else might be struggling with.
 See what topics people are struggling with.  
 Write some words of support for topics you or others have added.
 
-**The live project is available on Heroku: [Words of Support](#)**
+**The live project is available on Heroku: [Words of Support](https://words-of-support.herokuapp.com)**
 
 ![Image showing the project displaying responsively on different device types.](assets/readme-images/iamresponsive.png)
 
