@@ -16,7 +16,7 @@
 
     <!-- Search Results -->
     {% for topic in topics %}
-        <a href="{{ url_for('words', topic=topic.topic) }}">{{ topic.topic }}</a><br>
+        <a href="{{ url_for('add_words', topic=topic.topic) }}">{{ topic.topic }}</a><br>
         {{ topic.topic_creation_date }}<br>
         {{ topic.topic_creator }}<br>
         <hr>
