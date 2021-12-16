@@ -42,6 +42,32 @@ def read():
     return render_template("read.html")
 
 
+@app.route("/read-search-resuls", methods=["GET", "POST"])
+def search():
+    """
+    Display search results from read page.
+    """
+
+    if request.method == "POST":
+        search_term = request.form.get("topic")
+        topics_found = list(
+            mongo.db.topics.find({"$text": {"$search": search_term}}))
+
+    return render_template("read-search-results.html", topics=topics_found)
+
+
+@app.route("/all-topics", methods=["GET", "POST"])
+def search_all():
+    """
+    Display all results from read page.
+    """
+
+    if request.method == "POST":
+        topics_found = list(mongo.db.topics.find())
+
+    return render_template("read-search-results.html", topics=topics_found)
+
+
 @app.route("/write")
 def write():
     """
