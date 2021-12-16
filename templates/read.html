@@ -2,7 +2,7 @@
 {% block content %}
 
     <div class="row">
-        <div class="col s6 offset-s3 home-card">
+        <div class="col l6 m8 s12 offset-l3 offset-m2 home-card">
             <div class="card-panel teal center-align">
                 <h2><span class="white-text">
                         I'm struggling with ...
@@ -18,12 +18,12 @@
 
             <div class="row">
 
-                <div class="input-field col s4 offset-s3">
+                <div class="input-field col l4 offset-l3 m5 offset-m2 s8">
                     <input id="topic" name="topic" type="text" class="validate">
                     <label for="topic">word or short phrase</label>
                 </div>
 
-                <div class="col s2 input-margins">
+                <div class="col s4 m3 l2 input-margins">
                     <button class="btn waves-effect waves-light full-width" type="submit" name="action">Search
                         <i class="fas fa-search right"></i>
                     </button>
@@ -36,7 +36,7 @@
 
     <!-- Browse Topics -->
     <div class="row">
-        <form class="col s6 offset-s3 center-align" method="POST" action="{{ url_for('search_all') }}">
+        <form class="col l6 offset-l3 m8 offset-m2 s12 center-align" method="POST" action="{{ url_for('search_all') }}">
             <input type="hidden" id="browse" name="browse" value="all_results">
             <button class="waves-effect waves-light btn full-width" type="submit"><i class="fas fa-list"> Browse</i></button>
         </form>
