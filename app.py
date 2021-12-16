@@ -119,7 +119,7 @@ def add_topic():
     if request.method == "POST":
         try:
             topic = {
-                "topic": request.form.get("topic"),
+                "topic": request.form.get("topic").lower(),
                 "topic_creator": mongo.db.users.find_one(
                     {"email": session["user_email"]})["_id"],
                 "topic_creation_date": datetime.datetime.utcnow(),
@@ -128,7 +128,7 @@ def add_topic():
             flash("Thank you for your addition.")
         except KeyError:
             topic = {
-                "topic": request.form.get("topic"),
+                "topic": request.form.get("topic").lower(),
                 "topic_creator": "anonymous",
                 "topic_creation_date": datetime.datetime.utcnow(),
             }
