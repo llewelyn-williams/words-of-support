@@ -3,13 +3,14 @@ Words of Support App
 """
 
 import os
+import datetime
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
-import datetime
+
 if os.path.exists("env.py"):
     import env
 
@@ -53,7 +54,10 @@ def search():
         topics_found = list(
             mongo.db.topics.find({"$text": {"$search": search_term}}))
 
-    return render_template("read-search-results.html", topics=topics_found, search_term=search_term)
+    return render_template(
+        "read-search-results.html",
+        topics=topics_found,
+        search_term=search_term)
 
 
 @app.route("/all-topics", methods=["GET", "POST"])
