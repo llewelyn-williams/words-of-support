@@ -35,6 +35,20 @@ nav .app-heading{
 }
 
 
+
+
+@media only screen and (min-width: 1201px) {
+    .home-card {
+        padding: 24px 96px;
+    }
+}
+
+@media only screen and (min-width: 1780px) {
+    .home-card {
+        padding: 24px 270px;
+    }
+}
+
 @media only screen and (max-width: 1201px) {
     .struggling-heading {
         font-size: 62px;
@@ -53,7 +67,6 @@ nav .app-heading{
         line-height: 0;
     }
 }
-
 
 @media only screen and (min-width: 356px) {
     nav .app-heading{

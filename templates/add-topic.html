@@ -15,12 +15,13 @@
         <div class="col s6 home-card">
             <div class="card-panel teal center-align">
                 <span class="white-text">
-                    Would you like to add some supportive words for someone else experiencing  {{ topic['topic'] }}
+                    Would you like to add some supportive words for someone else experiencing <span class="carried_through_term">{{ topic['topic'] }}</span>?
                 </span>
             </div>
         </div>
     </div>
 
+    {% if session.user %}
     <div class="row">
         <form class="col s12" method="POST" action="{{ url_for('add_words') }}">
             <div class="row">
@@ -38,5 +39,14 @@
             </div>
         </form>
     </div>
+    {% else %}
+    <div class="row">
+        <div class="col s12">
+            <p class="center-align">
+                <a href="{{ url_for('login') }}">Sign in</a> to be able to submit supportive words.
+            </p>
+        </div>
+    </div>
+    {% endif %}
 
 {% endblock %}

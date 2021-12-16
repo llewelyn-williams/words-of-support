@@ -117,14 +117,23 @@ def add_topic():
     """
 
     if request.method == "POST":
-        topic = {
-            "topic": request.form.get("topic"),
-            "topic_creator": mongo.db.users.find_one(
-                {"email": session["user_email"]})["_id"],
-            "topic_creation_date": datetime.datetime.utcnow(),
-        }
-        mongo.db.topics.insert_one(topic)
-        flash("Thank you for your addition.")
+        try:
+            topic = {
+                "topic": request.form.get("topic"),
+                "topic_creator": mongo.db.users.find_one(
+                    {"email": session["user_email"]})["_id"],
+                "topic_creation_date": datetime.datetime.utcnow(),
+            }
+            mongo.db.topics.insert_one(topic)
+            flash("Thank you for your addition.")
+        except KeyError:
+            topic = {
+                "topic": request.form.get("topic"),
+                "topic_creator": "anonymous",
+                "topic_creation_date": datetime.datetime.utcnow(),
+            }
+            mongo.db.topics.insert_one(topic)
+            flash("Thank you for your addition.")
 
     return render_template("add-topic.html", topic=topic)
 
