@@ -15,6 +15,10 @@ nav .app-heading{
     height: 100%;
 }
 
+.home-card h2{
+    font-size: 5em;
+}
+
 .input-margins {
     margin-top: 1rem;
     margin-bottom: 1rem;
