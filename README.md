@@ -139,10 +139,10 @@ The navigation menu will appear differently depending on if a user is logged in 
 
 Wireframes showing layout plans for different devices.
 
-![An image previewing some of the wireframes made for the project](assets/wireframes/wireframes.png)
+![An image previewing some of the wireframes made for the project](assets/wireframes/wireframes-mobile.jpg)
 
 The complete set of wireframes can be viewed via these images:
- - [Mobile Wireframes](assets/wireframes/mobile-wireframes.png)
+ - [Mobile Wireframes](assets/wireframes/mobile-wireframes.pdf)
  - [Tablet Wireframes](assets/wireframes/tablet-wireframes.png)
  - [Desktop Wireframes](assets/wireframes/desktop-wireframes.png)
 
