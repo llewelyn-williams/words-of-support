@@ -48,7 +48,7 @@ def write():
     Display write page.
     """
 
-    # if check that there is a session user 
+    # if check that there is a session user
     try:
         if session["user"]:
             return render_template("write.html")
@@ -113,7 +113,7 @@ def register():
             return redirect(url_for("register"))
 
         # entry for use in the database
-        register = {
+        register_user = {
             "email": request.form.get("email").lower(),
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
@@ -121,7 +121,7 @@ def register():
 
         # TO-DO password confirmation field.
 
-        mongo.db.users.insert_one(register)
+        mongo.db.users.insert_one(register_user)
 
         # put the new user into a 'session' cookie
         session["user"] = request.form.get("username").lower()
@@ -172,7 +172,7 @@ def profile(username):
     # get the session user's usename fom the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    
+
     # only go to the profile page if there is a session user
     if session["user"]:
         return render_template("profile.html", username=username)
