@@ -53,7 +53,7 @@ def search():
         topics_found = list(
             mongo.db.topics.find({"$text": {"$search": search_term}}))
 
-    return render_template("read-search-results.html", topics=topics_found)
+    return render_template("read-search-results.html", topics=topics_found, search_term=search_term)
 
 
 @app.route("/all-topics", methods=["GET", "POST"])
@@ -84,8 +84,8 @@ def write():
         return redirect(url_for("login"))
 
 
-@app.route("/add", methods=["GET", "POST"])
-def add():
+@app.route("/add-words", methods=["GET", "POST"])
+def add_words():
     """
     Display add topic page.
     Handle submission to the supportive_words collection
@@ -102,7 +102,27 @@ def add():
         mongo.db.supportive_words.insert_one(words)
         flash("Thank you for your kind words.")
 
-    return render_template("add.html")
+    return render_template("add-words.html")
+
+
+@app.route("/add-topic", methods=["GET", "POST"])
+def add_topic():
+    """
+    Display add topic page.
+    Handle submission to the topics collection
+    """
+
+    if request.method == "POST":
+        topic = {
+            "topic": request.form.get("topic"),
+            "topic_creator": mongo.db.users.find_one(
+                {"email": session["user_email"]})["_id"],
+            "topic_creation_date": datetime.datetime.utcnow(),
+        }
+        mongo.db.topics.insert_one(topic)
+        flash("Thank you for your addition.")
+
+    return render_template("add-topic.html")
 
 
 @app.route("/topics")

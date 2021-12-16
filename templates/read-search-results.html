@@ -11,12 +11,26 @@
         </div>
     </div>
 
-    {% for topic in topics %}
-        {{ topic.topic }}<br>
-        {{ topic.topic_creation_date }}<br>
-        {{ topic.topic_creator }}<br>
-        <hr>
-    {% endfor %}
 
+    {% if topics|length > 0 %}
 
+        <!-- Search Results -->
+        {% for topic in topics %}
+            {{ topic.topic }}<br>
+            {{ topic.topic_creation_date }}<br>
+            {{ topic.topic_creator }}<br>
+            <hr>
+        {% endfor %}
+
+        <!-- Option to Add if No Results-->
+        {% else %}
+            <h3>No results</h3>
+            <p>Would you like to add <span class="carried_through_term">{{ search_term }}</span>?</p>
+            <form method="POST" action="{{ url_for('add_topic') }}">
+                <input type="hidden" id="topic" name="topic" value="{{ search_term }}">
+                <button class="btn"><i class="fas fa-plus-circle small"></i> {{ search_term }}</button>
+            </form>
+    {% endif %}
+
+    
 {% endblock %}
