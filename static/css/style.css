@@ -15,6 +15,15 @@ nav .app-heading{
     height: 100%;
 }
 
+.input-margins {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.full-width{
+    width: 100%;
+}
+
 @media only screen and (min-width: 356px) {
     nav .app-heading{
         font-family: 'Merienda One', cursive;

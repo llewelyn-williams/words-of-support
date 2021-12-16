@@ -2,13 +2,46 @@
 {% block content %}
 
     <div class="row">
-        <div class="col s6 home-card">
+        <div class="col s6 offset-s3 home-card">
             <div class="card-panel teal center-align">
-                <span class="white-text">
-                    I'm struggling with ...
-                </span>
+                <h2><span class="white-text">
+                        I'm struggling with ...
+                    </span>
+                </h2>
             </div>
         </div>
     </div>
+
+    <!-- Search For Topic -->
+    <div class="row">
+        <form class="col s12">
+
+            <div class="row">
+
+                <div class="input-field col s4 offset-s3">
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">word or short phrase</label>
+                </div>
+
+                <div class="col s2 input-margins">
+                    <button class="btn waves-effect waves-light full-width" type="submit" name="action">Search
+                        <i class="fas fa-search right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Brows Topics -->
+    <div class="row">
+        <div class="col s6 offset-s3 center-align">
+            <button class="waves-effect waves-light btn full-width"><i class="fas fa-list"> Browse</i></button>
+        </div>
+    </div>
+
+
+
 
 {% endblock %}
