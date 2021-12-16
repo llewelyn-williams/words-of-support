@@ -104,10 +104,10 @@ def write():
         return redirect(url_for("login"))
 
 
-@app.route("/add-words", methods=["GET", "POST"])
-def add_words():
+@app.route("/add-words/<topic>", methods=["GET", "POST"])
+def add_words(topic):
     """
-    Display add topic page.
+    Display add words page.
     Handle submission to the supportive_words collection
     """
 
@@ -122,7 +122,9 @@ def add_words():
         mongo.db.supportive_words.insert_one(kind_words)
         flash("Thank you for your kind words.")
 
-    return render_template("add-words.html")
+    topic_id = mongo.db.topics.find_one({"topic": topic})["_id"]
+
+    return render_template("add-words.html", topic=topic, topic_id=topic_id)
 
 
 @app.route("/add-topic", methods=["GET", "POST"])
