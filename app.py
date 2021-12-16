@@ -101,7 +101,7 @@ def add_words():
             "words_creator": session["user"],
             "words_creation_date": datetime.datetime.utcnow(),
             "words_rating": 2.5,
-            "topic_id": ""
+            "topic_id": ObjectId(request.form.get("topic_id"))
         }
         mongo.db.supportive_words.insert_one(kind_words)
         flash("Thank you for your kind words.")
@@ -126,7 +126,7 @@ def add_topic():
         mongo.db.topics.insert_one(topic)
         flash("Thank you for your addition.")
 
-    return render_template("add-topic.html")
+    return render_template("add-topic.html", topic=topic)
 
 
 @app.route("/words/<topic>", methods=["GET", "POST"])
