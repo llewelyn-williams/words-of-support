@@ -1,14 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="row">
-        <div class="col s6 home-card">
-            <div class="card-panel teal center-align">
-                <span class="white-text">
-                    Read
-                </span>
-            </div>
+<div class="row">
+    <div class="col s6 home-card">
+        <div class="card-panel teal center-align">
+            <span class="white-text">
+                Write Results
+            </span>
         </div>
     </div>
+</div>
+
+
+{% if topics|length > 0 %}
+
+    <!-- Search Results -->
+    {% for topic in topics %}
+        <a href="{{ url_for('words', topic=topic.topic) }}">{{ topic.topic }}</a><br>
+        {{ topic.topic_creation_date }}<br>
+        {{ topic.topic_creator }}<br>
+        <hr>
+    {% endfor %}
+
+    <!-- Option to Add if No Results-->
+    {% else %}
+        <h3>No results</h3>
+        <p>Would you like to add <span class="carried_through_term">{{ search_term }}</span>?</p>
+        <form method="POST" action="{{ url_for('add_topic') }}">
+            <input type="hidden" id="topic" name="topic" value="{{ search_term }}">
+            <button class="btn"><i class="fas fa-plus-circle small"></i> {{ search_term }}</button>
+        </form>
+{% endif %}
 
 {% endblock %}

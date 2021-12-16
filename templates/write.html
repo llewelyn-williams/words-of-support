@@ -1,14 +1,47 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="row">
-        <div class="col s6 home-card">
-            <div class="card-panel teal center-align">
-                <span class="white-text">
-                    Write
+<div class="row">
+    <div class="col l6 m8 s12 offset-l3 offset-m2 home-card">
+        <div class="card-panel teal center-align">
+            <h2><span class="white-text struggling-heading">
+                    Write some kind words for someone who may be struggling with ...
                 </span>
-            </div>
+            </h2>
         </div>
     </div>
+</div>
+
+<!-- Search For Topic -->
+<div class="row">
+    <form class="col s12" method="POST" action="{{ url_for('search') }}">
+
+        <div class="row">
+
+            <div class="input-field col l4 offset-l3 m5 offset-m2 s8">
+                <input type="hidden" id="page_source" name="page_source" value="write">
+                <input id="topic" name="topic" type="text" class="validate">
+                <label for="topic">word or short phrase</label>
+            </div>
+
+            <div class="col s4 m3 l2 input-margins">
+                <button class="btn waves-effect waves-light full-width" type="submit" name="action">Search
+                    <i class="fas fa-search right"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </form>
+</div>
+
+<!-- Browse Topics -->
+<div class="row">
+    <form class="col l6 offset-l3 m8 offset-m2 s12 center-align" method="POST" action="{{ url_for('search_all') }}">
+        <input type="hidden" id="browse" name="browse" value="all_results">
+        <input type="hidden" id="page_source" name="page_source" value="write">
+        <button class="waves-effect waves-light btn full-width" type="submit"><i class="fas fa-list"> Browse</i></button>
+    </form>
+</div>
 
 {% endblock %}
