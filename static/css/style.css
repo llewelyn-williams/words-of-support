@@ -34,6 +34,27 @@ nav .app-heading{
     font-size: larger;
 }
 
+
+@media only screen and (max-width: 1201px) {
+    .struggling-heading {
+        font-size: 62px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .struggling-heading {
+        font-size: 56px;
+    }
+}
+
+@media only screen and (max-width: 356px) {
+    .struggling-heading {
+        font-size: 40px;
+        line-height: 0;
+    }
+}
+
+
 @media only screen and (min-width: 356px) {
     nav .app-heading{
         font-family: 'Merienda One', cursive;
