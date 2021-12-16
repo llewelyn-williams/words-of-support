@@ -114,7 +114,8 @@ def add_words(topic):
     if request.method == "POST":
         kind_words = {
             "words": request.form.get("words"),
-            "words_creator": session["user"],
+            "words_creator": mongo.db.users.find_one(
+                    {"email": session["user_email"]})["_id"],
             "words_creation_date": datetime.datetime.utcnow(),
             "words_rating": 2.5,
             "topic_id": ObjectId(request.form.get("topic_id"))
