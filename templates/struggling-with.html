@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="row">
+        <div class="col l6 m8 s12 offset-l3 offset-m2 home-card">
+            <div class="card-panel teal center-align">
+                <h2><span class="white-text struggling-heading">
+                        I'm struggling with ...
+                    </span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search For Topic -->
+    <div class="row">
+        <form class="col s12" method="POST" action="{{ url_for('struggling_with') }}">
+
+            <div class="row">
+
+                <div class="input-field col l4 offset-l3 m5 offset-m2 s8">
+                    <input id="topic" name="topic" type="text" class="validate">
+                    <label for="topic">word or short phrase</label>
+                </div>
+
+                <div class="col s4 m3 l2 input-margins">
+                    <button class="btn waves-effect waves-light full-width" type="submit" name="action">Add
+                        <i class="fas fa-plus right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+{% endblock %}

@@ -138,6 +138,41 @@ def add_topic():
     return render_template("add-topic.html", topic=topic)
 
 
+@app.route("/struggling-with", methods=["GET", "POST"])
+def struggling_with():
+    """
+    Display add topic page.
+    Handle submission to the topics collection
+    """
+
+    if request.method == "POST":
+        # check if it's already there and flash if so and reload page
+        if mongo.db.topics.find_one(
+                {"topic": request.form.get("topic").lower()}):
+            flash(f"{request.form.get('topic')} has already been submitted.")
+        else:
+            # add it to the datbase if it's not there and flash that it's added
+            try:
+                topic = {
+                    "topic": request.form.get("topic").lower(),
+                    "topic_creator": mongo.db.users.find_one(
+                        {"email": session["user_email"]})["_id"],
+                    "topic_creation_date": datetime.datetime.utcnow(),
+                }
+                mongo.db.topics.insert_one(topic)
+                flash("Thank you for your addition.")
+            except KeyError:
+                topic = {
+                    "topic": request.form.get("topic").lower(),
+                    "topic_creator": "anonymous",
+                    "topic_creation_date": datetime.datetime.utcnow(),
+                }
+                mongo.db.topics.insert_one(topic)
+                flash("Thank you for your addition.")
+
+    return render_template("struggling-with.html")
+
+
 @app.route("/words/<topic>", methods=["GET", "POST"])
 def words(topic):
     """
