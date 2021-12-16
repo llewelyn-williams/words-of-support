@@ -96,14 +96,14 @@ def add_words():
     """
 
     if request.method == "POST":
-        words = {
+        kind_words = {
             "words": request.form.get("words"),
             "words_creator": session["user"],
             "words_creation_date": datetime.datetime.utcnow(),
             "words_rating": 2.5,
             "topic_id": ""
         }
-        mongo.db.supportive_words.insert_one(words)
+        mongo.db.supportive_words.insert_one(kind_words)
         flash("Thank you for your kind words.")
 
     return render_template("add-words.html")
