@@ -11,4 +11,17 @@
         </div>
     </div>
 
+
+    <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">button</a>
+        </div>
+        {% for item in supportive_words %}
+            <div class="carousel-item red white-text">
+                <h2>{{ item.words }}</h2>
+                <p class="white-text">{{ item.words_creator }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
 {% endblock %}

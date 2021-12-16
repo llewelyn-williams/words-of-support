@@ -129,6 +129,18 @@ def add_topic():
     return render_template("add-topic.html")
 
 
+@app.route("/words/<topic>", methods=["GET", "POST"])
+def words(topic):
+    """
+    Display supportive words associated to a given topic
+    """
+    topic_id = mongo.db.topics.find_one({"topic": topic})["_id"]
+    supportive_words = list(
+        mongo.db.supportive_words.find({"topic_id": topic_id}))
+
+    return render_template("words.html", supportive_words=supportive_words)
+
+
 @app.route("/topics")
 def topics():
     """
