@@ -156,6 +156,20 @@ def edit_words(supportive_words_id):
                            user=user)
 
 
+@app.route("/delete-words/<supportive_words_id>")
+def delete_words(supportive_words_id):
+    """
+    Handle delete functionality to supportive words.
+    """
+
+    user = session["user"]
+
+    mongo.db.supportive_words.delete_one({"_id": ObjectId(supportive_words_id)})
+    flash("Supportive Words Deleted")
+
+    return redirect(url_for('profile', username=user))
+
+
 @app.route("/add-topic", methods=["GET", "POST"])
 def add_topic():
     """
