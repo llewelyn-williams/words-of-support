@@ -42,15 +42,17 @@ As and when issues were spotted I amended styles for the elements to ensure that
 
 ## Functionality
 ### Expected
-
+That the user will be able to navigate and perform CRUD actions without experiencing errors.
 ### Test
-
+I ran through the site performing each of the actions along the different pathways that a user could take.
 ### Result
-
+I encountered an issue when trying to register a new user. After creating a new user the app redirects to the profile page, but I had neglected to create the same session data when registering as was created when signing in.
 ### Fix
+One line added to the register function to create the required session data.
+`session["user_email"] = request.form.get("email").lower()`
 
 
-## Peformance
+## Performance
 ### Expected
 
 ### Test
