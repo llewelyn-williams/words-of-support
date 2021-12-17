@@ -295,6 +295,7 @@ def register():
 
         # put the new user into a 'session' cookie
         session["user"] = request.form.get("username").lower()
+        session["user_email"] = request.form.get("email").lower()
         flash("You have been Signed Up Successfully.")
         return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
