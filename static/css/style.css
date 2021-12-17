@@ -72,6 +72,24 @@ nav .app-heading{
     padding: 5em;
 }
 
+.chevron-left {
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.chevron-right {
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
 /* Media Queries */
 @media only screen and (min-width: 1201px) {
     .home-card {
