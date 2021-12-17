@@ -35,7 +35,7 @@
     <div class="row">
         {% for topic in users_topics %}
             <div class="col s12 m4 l3">
-                <a href="{{ url_for('words', topic=topic.topic) }}"><div class="card-panel teal center-align">
+                <a href="{{ url_for('words', topic=topic.topic) }}"><div class="card-panel tile-colour center-align full-width waves-effect waves-light">
                     <p class="white-text">{{ topic.topic }}</p>
                 </div></a>
             </div>
