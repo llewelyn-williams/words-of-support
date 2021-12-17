@@ -36,6 +36,7 @@ Using Google Developer Tools I changed to each device available to see how the l
 ### Result
 Throughout development, on occasion I discovered elements that were not displaying how I thought they ought to be, for example appearing off the screen or out of alignment with other elements. However, by the end I was satisfied that the elements were all appearing in a satisfactory position / proportion.  
 ![HTML Validation Errors](assets/readme-videos/responsiveness.webm)  
+[![Watch the video](assets/readme-videos/responsiveness.png)](https://github.com/llewelyn-williams/words-of-support/blob/main/assets/readme-videos/responsiveness.webm)  
 ### Fix
 As and when issues were spotted I amended styles for the elements to ensure that everything fit and flowed. Where necessary I added media queries or used Materialize classes for different device sizes or orientation.
 
