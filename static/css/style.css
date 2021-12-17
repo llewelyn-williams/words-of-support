@@ -55,6 +55,24 @@ nav .app-heading{
     font-size: 3em;
 }
 
+.chevron-left {
+    font-size: 40px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+
+.chevron-right {
+    font-size: 40px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    right: 2%;
+}
+
 /* Overwriting Materialize Styles */
 .btn, .btn-large, .btn-small {
     background-color: #4f4e78;
@@ -69,25 +87,7 @@ nav .app-heading{
 }
 
 .carousel.carousel-slider .carousel-item h2 {
-    padding: 5em;
-}
-
-.chevron-left {
-    font-size: 50px;
-    color: white;
-    z-index: 1;
-    position: absolute;
-    top: 40%;
-    left: 5%;
-}
-
-.chevron-right {
-    font-size: 50px;
-    color: white;
-    z-index: 1;
-    position: absolute;
-    top: 40%;
-    right: 5%;
+    padding: 0 2em;
 }
 
 /* Media Queries */
