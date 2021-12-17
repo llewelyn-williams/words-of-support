@@ -24,6 +24,9 @@
         {% if supportive_words|length > 1 %}
             <i class="fas fa-chevron-right right chevron-right"></i>
         {% endif %}
+        {% if supportive_words|length < 1 %}
+        <p>No one has added any supportive words yet.</p>
+        {% endif %}
     </div>
     <a href="{{ url_for('add_words', topic=topic) }}" class="btn waves-effect waves-light full-width">Add Words
         <i class="fas fa-plus right"></i>
