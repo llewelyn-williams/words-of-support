@@ -288,7 +288,7 @@ You will need a database with [MongoDB](https://mongodb.com/) designed with the 
 
 Live deployment of this vie Heroku has three main requirements
 1. The included Procfile needs to be present 
-2. The same environment variables from above need to be entered into the **Config Vars** area of the **Settings** in the project that you will need o create on [Heroku](https://heroku.com)
+2. The same environment variables from above need to be entered into the **Config Vars** area of the **Settings** in the project that you will need to create on [Heroku](https://heroku.com)
 3. The project needs to be deployed, for this I recommend linking your GitHub repository containing the project using the **GitHub** option from the **Deployment method** section under the **Deploy** tab of your Heroku project. Then enable **Automatic deploys**
 
 
