@@ -1,5 +1,10 @@
 body {
     font-family: 'Delius', cursive;
+    background-color: #f4ebff;
+}
+
+.tile-colour {
+    background-color: #9291b0
 }
 
 .text-shadow {
@@ -23,6 +28,10 @@ nav .app-heading{
     font-size: 5em;
 }
 
+.home-link:hover {
+    color: royalblue;
+}
+
 .input-margins {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -40,6 +49,11 @@ nav .app-heading{
 
 .home-card .write-struggling-heading {
     font-size: 3em;
+}
+
+/* Overwriting Materialize Styles */
+.btn, .btn-large, .btn-small {
+    background-color: #9291b0;
 }
 
 @media only screen and (min-width: 1201px) {

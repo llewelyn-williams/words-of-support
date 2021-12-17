@@ -3,7 +3,7 @@
 
     <div class="row">
         <div class="col s12 m8 offset-m2 l12">
-            <div class="card-panel teal">
+            <div class="card-panel tile-colour">
                 <h3 class="center-align white-text">
                     {{ username }}'s Profile
                 </h3>
@@ -17,14 +17,14 @@
     <div class="row">
         {% for word in users_words %}
             <div class="col s12 m8 offset-m2 l6 offset-0l">
-                <div class="card teal">
+                <div class="card tile-colour">
                     <div class="card-content white-text">
                         <span class="card-title">{{ word.words }}</span>
                         <p>topic: <em>{{ users_words_topics[loop.index-1] }}</em></p>
                     </div>
                     <div class="card-action">
                         <a href="{{ url_for('edit_words', supportive_words_id=word._id) }}" class="waves-effect waves-light btn"><i class="fas fa-edit right"></i>Edit</a>  
-                        <a href="{{ url_for('delete_words', supportive_words_id=word._id) }}"" class="waves-effect waves-light btn"><i class="fas fa-trash-alt right"></i>Delete</a>
+                        <a href="{{ url_for('delete_words', supportive_words_id=word._id) }}" class="waves-effect waves-light btn"><i class="fas fa-trash-alt right"></i>Delete</a>
                     </div>
                 </div>
             </div>
