@@ -244,7 +244,7 @@ def words(topic):
     supportive_words = list(
         mongo.db.supportive_words.find({"topic_id": topic_id}))
 
-    return render_template("words.html", supportive_words=supportive_words)
+    return render_template("words.html", supportive_words=supportive_words, topic=topic)
 
 
 @app.route("/topics")
