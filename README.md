@@ -137,19 +137,16 @@ The navigation menu will appear differently depending on if a user is logged in 
 
 #### Wireframes
 
-Wireframes showing layout plans for different devices.
+Wireframes showing layout plans.
 
-![An image previewing some of the wireframes made for the project](assets/wireframes/wireframes-mobile.jpg)
-
-The complete set of wireframes can be viewed via these images:
- - [Mobile Wireframes](assets/wireframes/mobile-wireframes.pdf)
- - [Tablet Wireframes](assets/wireframes/tablet-wireframes.png)
- - [Desktop Wireframes](assets/wireframes/desktop-wireframes.png)
+![An image previewing some of the mobile wireframes made for the project](assets/wireframes/wireframes.png)
 
 
 ### Surface
 
-Surface considerations. 
+Choices for the visual style of the project are to present a calm, somewhat neutral, non-clinical tone.
+Colours used will be more soft than garish. Pastel like tones, using pinks, purples and soft blues.
+Cursive fonts will be used, to represent the mildly wistful desired feeling, however the cursive fonts will be more on the sans-serif side of cursive as not too be too airy-fairy.
 
 
 ## Features
