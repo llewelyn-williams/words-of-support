@@ -185,17 +185,16 @@ These features have been implemented in the project.
 
 ### Future Features
 Possible features to be considered for future releases.
- - Feature
-	 * Feature detail.
-	 * Feature detail.
+ - Additional elements to enhance the registration process.
+	 * Two password fields to verify password entry on creation.
+	 * Email verification on account creation.
 
- - Feature
-	 * Feature detail.
-	 * Feature detail.
-     * Feature detail.
+ - Admin account access
+	 * Giving the ability to edit and delete supportive words submitted by any user
+	 * Also giving the ability to delete topics and cascade the deletion to all associate supportive words.
 
- - Feature
-	 * Feature detail.
+ - Sorting
+	 * The ability to sort displayed records form the database in either alphabetical or submission datetime order.
  
  - Feature
 	 * Feature detail.
