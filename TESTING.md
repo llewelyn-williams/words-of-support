@@ -91,9 +91,12 @@ I added a meta description to the base.html
  
 ## Usability
 ### Expected
-That users should be able to use the site ........
+That users should be able to use the site intuitively 
 ### Test
-Throughout development....
+Throughout development I checked the navigation pathways throughout site.
 ### Result
-
+I identified numerous areas where additional navigation or pointers to other areas could be added.
 ### Fix
+I added extra buttons on certain pages to allow users to add more entries to the database without needing to re-navigate through the site.
+### Unresolved
+There are still more opportunities to add more guiding text and extra links that can cut down how much navigating needs to be done and make things clearer.
