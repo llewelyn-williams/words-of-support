@@ -300,7 +300,22 @@ def profile(username):
 
     # only go to the profile page if there is a session user
     if session["user"]:
-        return render_template("profile.html", username=username)
+        user_id = mongo.db.users.find_one(
+            {"email": session["user_email"]})["_id"]
+        users_topics = list(mongo.db.topics.find({"topic_creator": user_id}))
+        users_words = list(mongo.db.supportive_words.find(
+            {"words_creator": user_id}))
+        users_words_topics = []
+
+        for item in users_words:
+            users_words_topics.append(
+                mongo.db.topics.find_one({"_id": item["topic_id"]})["topic"])
+
+        return render_template("profile.html",
+                               username=username,
+                               users_topics=users_topics,
+                               users_words=users_words,
+                               users_words_topics=users_words_topics)
 
     # otherwise redirect users to the login page
     return redirect(url_for("login"))
