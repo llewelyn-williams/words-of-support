@@ -39,7 +39,7 @@ Write some words of support for topics you or others have added.
 - [Technologies Used](#technologies-used)
   * [Languages](#languages)
   * [Libraries](#libraries)
-  * [APIs](#apis)
+  * [Frameworks](#frameworks)
   * [Other Services and Software](#other-services-and-software)
 - [Testing](#testing)
 - [Deployment Instructions](#deployment-instructions)
@@ -151,34 +151,36 @@ Cursive fonts will be used, to represent the mildly wistful desired feeling, how
 
 ## Features
 
-Features of project
+The project allows users the ability to navigate through the site reading and submitting content. If the user creates an account and singed in they can submit to more areas as well as manage their own submitted content from a profile page, updating or deleting their entries.
 
 ### Current Features
 These features have been implemented in the project.
 
- - Feature
-	 * Feature detail.
-	 * Feature detail.
+ - Register & Login Functionality
+	 * Certain areas of the website and menu items are not accessible to users unless they have created an account and logged in.
+	 * Passwords are hashed and salted using the [werkzeug](https://www.palletsprojects.com/p/werkzeug/) library.
 	 
-![Feature Image](assets/readme-images/#)
+![The Sign Up Page](assets/readme-images/sign_up.png)
 
- - Feature
-	 * Feature detail.
-	 * Feature detail.
+ - Data can be retrieved from the database by topic and is displayed in a carousel.
+	 * Swipe controls can be used to move through each retrieved item.
+	 * A button is included on the page to be able to add additional items to the set that is current ly being viewed.
 	 
-![Feature Image](assets/readme-images/#)
+![Carousel of text retrieved from the database](assets/readme-images/carousel.png)
 
- - Feature
-	 * Feature detail.
-	 * Feature detail.
+ - Users can submit content that creates new records in the database.
+	 * Either logged in or not logged in users can create new topics.
+	 * Only logged in users can create supportive words records togo with those topics.
 	 
-![Feature Image](assets/readme-images/#)
+![Add Supportive Words](assets/readme-images/add_words.png)
+![Add Topics](assets/readme-images/struggling_with.png)
 
- - Feature
-	 * Feature detail.
-	 * Feature detail.
+ - Users can edit and delete their own supportive words records.
+	 * Accessed via the Profile page edit and delete buttons guide them to complete either action.
+	 * From the profile page they can also see the topic that they have submitted, linking them to the supportive words others may have written for these.
 	 
-![Feature Image](assets/readme-images/#)
+![Edit Submitted Words](assets/readme-images/edit.png)
+![Delete Submitted Words](assets/readme-images/delete.png)
 
 
 ### Future Features
@@ -207,16 +209,18 @@ Possible features to be considered for future releases.
  - HTML 
  - CSS
  - JavaScript
- - xxxxx
- - xxxxx
+ - Python
 
 ### Libraries
  - [jQuery](https://jquery.com/)
  - [Link](#)
-
- ### APIs
- - [Link](#)
  
+### Frameworks
+ - [Materialize](https://materializecss.com/)
+	 - For pre-defined HTML and CSS.
+ - [Flask](https://materializecss.com/)
+	 - templated web app deveopment along with [Flask-PyMongo](https://flask-pymongo.readthedocs.io/) and [dnspython](https://www.dnspython.org/).
+
 ### Other Services and Software
  - Git
  	 - Version control.
@@ -230,16 +234,15 @@ Possible features to be considered for future releases.
 	 - Used to generate table of contents in markdown for this README markdown file.
  - [Moon Modeler](https://www.datensen.com/data-modeling/moon-modeler-for-databases.html)
 	 - For creating the database diagram.
- - [Link](#)
-	 - For xxxxx.
- - [Link](#)
-	 - For xxxxx.
- - [Link](#)
-	 - For xxxxx.
- - [Link](#)
-	 - For xxxxx.
- - [Link](#)
-	 - For xxxxx.
+ - [MongoDB](https://mongodb.com/)
+	 - For Document Database.
+ - [FontAwesome](https://fontawesome.com/)
+	 - For icons.
+ - [GoogleFonts](https://fonts.google.com/)
+	 - Fonts.
+ - [Heroku](https://heroku.com)
+	 - For deploying the live app.
+
 
 ## Testing
 
@@ -279,34 +282,17 @@ GitHubPages
 
 ### Content
 
-Reused or inspired code from the following sources:
- - [StackOverflow Questions & Answers](https://stackoverflow.com/questions/) various, links to specifics in code.
- - [Medium](https://medium.com/) linked to specific in code.
+Vigorous use of components and classes from Materialize.
+[Materialize](https://materializecss.com/)
 
  Used for referencing:
- - [MDN Web Docs](https://developer.mozilla.org/en-US/)
  - [W3 Schools](https://www.w3schools.com/)
+ - [MongoDB Documentation](https://docs.mongodb.com/)
 
 ### Media
 
- - [Link](#) by [Name](#)
- used as XXXX.
- - [Link](#) by [Name](#)
- used as XXXX.
- - [Link](#) by [Name](#)
- used as XXXX.
- - [Link](#) by [Name](#)
- used as XXXX.
- - [Link](#) by [Name](#)
- used as XXXX.
- - [Link](#) by [Name](#)
- used as XXXX.
- - [Link](#) by [Lia-Aramburu](https://www.vecteezy.com/members/lia-aramburu) via [Name](#)
- used as xxxxx.
- - [Link](#) by [Lia-Aramburu](https://www.vecteezy.com/members/lia-aramburu) via [Name](#)
- used as xxxxx.
  - Mockups Screenshot from [Am I Responsive](http://ami.responsivedesign.is/)
- - Emoji used for favicon.ico is part of [Twemoji](https://twemoji.twitter.com/)
+
 
 ### Thanks
 
