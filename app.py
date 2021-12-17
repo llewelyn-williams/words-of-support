@@ -164,7 +164,8 @@ def delete_words(supportive_words_id):
 
     user = session["user"]
 
-    mongo.db.supportive_words.delete_one({"_id": ObjectId(supportive_words_id)})
+    mongo.db.supportive_words.delete_one(
+        {"_id": ObjectId(supportive_words_id)})
     flash("Supportive Words Deleted")
 
     return redirect(url_for('profile', username=user))
