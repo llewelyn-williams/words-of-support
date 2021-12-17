@@ -54,11 +54,11 @@ One line added to the register function to create the required session data.
 
 ## Performance
 ### Expected
-
+FOr the site to load quickly.
 ### Test
-Using Lighthouse from Chrome Developer tools...
+Using Lighthouse from Chrome Developer tools.
 ### Result
-
+![Lighthouse Performance Report](assets/readme-images/performance.png)  
 ### Fix
 
 ### Unresolved
@@ -71,7 +71,7 @@ The site should not have any major accessibility issues as shown by accessibilit
 ### Test
 Using Lighthouse from Chrome Developer tools....
 ### Result
- 
+ ![Lighthouse Accessibility Report](assets/readme-images/accessibility.png)  
 ### Fix
 
  
@@ -82,7 +82,7 @@ No major issues to show from SEO report.
 ### Test
 Using Lighthouse from Chrome Developer tools, I ran a report.
 ### Result
-
+ ![Lighthouse SEO Report](assets/readme-images/seo.png)  
 ### Fix
 
  
