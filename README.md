@@ -269,7 +269,7 @@ Cloning a Repository
 Requirements
 
 This app has dependencies listed in the requirements.txt included.
-This project was build in an environment using Python3, therefore it is likely you will need to ue the same version.
+This project was built in an environment using Python3, therefore it is likely you will need to use the same version.
 
 Install the dependencies all together using the requirements.txt by using the command `pip3 install -r requirements.txt` from the CLI of your IDE.
 
@@ -286,7 +286,7 @@ os.environ.setdefault("MONGO_DBNAME", "YOUR_DATABSE_NAME")
 
 You will need a database with [MongoDB](https://mongodb.com/) designed with the same schema [pictured above](#database-design). From the database you crete with MongoDB's you can get the `MONGO_URI` and `MONGO_DBNAME` values that you need frm MongoDB's connection guide.
 
-Live deployment of this vie Heroku has three main requirements
+Live deployment of this project via Heroku has three main requirements:
 1. The included Procfile needs to be present 
 2. The same environment variables from above need to be entered into the **Config Vars** area of the **Settings** in the project that you will need to create on [Heroku](https://heroku.com)
 3. The project needs to be deployed, for this I recommend linking your GitHub repository containing the project using the **GitHub** option from the **Deployment method** section under the **Deploy** tab of your Heroku project. Then enable **Automatic deploys**
