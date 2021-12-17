@@ -35,9 +35,9 @@
     <div class="row">
         {% for topic in users_topics %}
             <div class="col s12 m4 l3">
-                <div class="card-panel teal center-align">
+                <a href="{{ url_for('words', topic=topic.topic) }}"><div class="card-panel teal center-align">
                     <p class="white-text">{{ topic.topic }}</p>
-                </div>
+                </div></a>
             </div>
         {% endfor %}
     </div>
