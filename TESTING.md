@@ -54,15 +54,14 @@ One line added to the register function to create the required session data.
 
 ## Performance
 ### Expected
-FOr the site to load quickly.
+For the site to load quickly.
 ### Test
 Using Lighthouse from Chrome Developer tools.
 ### Result
 ![Lighthouse Performance Report](assets/readme-images/performance.png)  
-### Fix
-
+The things that impact the speed the most are dependencies that would take a lot of work to trim down
 ### Unresolved
-Unfortunately I do want to remove the fonts that I am getting from Google Fonts, so it is still there slowing things up slightly.
+As they do not impact things that much, I believe it is okay to leave the linked libraries as they are. While I could potentially remove the parts of them that I am not utilising this would be quite complicated and a lot of effort for a small gain.
  
  
 ## Accessibility
