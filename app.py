@@ -145,7 +145,8 @@ def edit_words(supportive_words_id):
             {"_id": ObjectId(supportive_words_id)}, submit)
         flash("Words Updated")
 
-        return redirect(url_for('edit_words', supportive_words_id=supportive_words_id))
+        return redirect(
+            url_for('edit_words', supportive_words_id=supportive_words_id))
 
     supportive_words = mongo.db.supportive_words.find_one(
         {"_id": ObjectId(supportive_words_id)})
