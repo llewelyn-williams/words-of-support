@@ -68,12 +68,14 @@ As they do not impact things that much, I believe it is okay to leave the linked
 ### Expected
 The site should not have any major accessibility issues as shown by accessibility tests.
 ### Test
-Using Lighthouse from Chrome Developer tools....
+Using Lighthouse from Chrome Developer tools.
 ### Result
  ![Lighthouse Accessibility Report](assets/readme-images/accessibility.png)  
+It reported issues with contrast with the background colour that I had in use behind a lt of the text on the site.
 ### Fix
-
- 
+I deepened the colour of the background to increase the contrast.
+### Unresolved
+There were still issues with the colour of the two large links on the homepage, however, they were only just missing the ratio to pass and their hover colour is deeper, so the contrast issue is only very minor and there is time in use when they aren't too low a contrast ratio.
  
 ## SEO
 ### Expected
@@ -82,8 +84,10 @@ No major issues to show from SEO report.
 Using Lighthouse from Chrome Developer tools, I ran a report.
 ### Result
  ![Lighthouse SEO Report](assets/readme-images/seo.png)  
+ It highlighted that I was missing a meta description.
 ### Fix
-
+I added a meta description to the base.html
+`<meta name="description" content="Share issues and supportive kind words anonymously.">`
  
 ## Usability
 ### Expected
