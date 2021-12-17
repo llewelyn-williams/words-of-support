@@ -252,7 +252,7 @@ See separate [TESTING.md](TESTING.md)
 
 Forking a Repository
 1. Navigate to GitHub Repository
-2. Use the **Fork** link (node tree icon) from the top right of the page justunder the header.
+2. Use the **Fork** link (node tree icon) from the top right of the page just under the header.
 3. You now have a copy of the repository among your own.
 
 [Further Instruction](https://help.github.com/articles/fork-a-repo)
@@ -266,16 +266,31 @@ Cloning a Repository
 
 [Further Instruction](https://help.github.com/articles/cloning-a-repository/)
 
-GitHubPages
+Requirements
 
- 1. Navigate to GitHub Repository
- 2. Use the **Settings** link (cog icon) from the menu atop the repository.
- 3. Use the **Pages** link from the left hand navigation menu.
- 4. Select **Branch: master** as the source.
- 5. Click **Save**
- 6. The site can be found at the address `https://`**github-username**`.github.io/`**repository-name**
+This app has dependencies listed in the requirements.txt included.
+This project was build in an environment using Python3, therefore it is likely you will need to ue the same version.
 
-[Further Instruction](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
+Install the dependencies all together using the requirements.txt by using the command `pip3 install -r requirements.txt` from the CLI of your IDE.
+
+This project uses environment variables not included in the repository. To set these locally create an `env.py` file and include the following:
+```
+import os
+
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "YOUR_SECRET KEY - can be anything")
+os.environ.setdefault("MONGO_URI", "YOUR_MONGODB_URI")
+os.environ.setdefault("MONGO_DBNAME", "YOUR_DATABSE_NAME")
+```
+
+You will need a database with [MongoDB](https://mongodb.com/) designed with the same schema [pictured above](#database-design). From the database you crete with MongoDB's you can get the `MONGO_URI` and `MONGO_DBNAME` values that you need frm MongoDB's connection guide.
+
+Live deployment of this vie Heroku has three main requirements
+1. The included Procfile needs to be present 
+2. The same environment variables from above need to be entered into the **Config Vars** area of the **Settings** in the project that you will need o create on [Heroku](https://heroku.com)
+3. The project needs to be deployed, for this I recommend linking your GitHub repository containing the project using the **GitHub** option from the **Deployment method** section under the **Deploy** tab of your Heroku project. Then enable **Automatic deploys**
+
 
 ## Acknowledgements
 
