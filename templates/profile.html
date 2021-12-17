@@ -23,7 +23,7 @@
                         <p>topic: <em>{{ users_words_topics[loop.index-1] }}</em></p>
                     </div>
                     <div class="card-action">
-                        <a class="waves-effect waves-light btn"><i class="fas fa-edit right"></i>Edit</a>  
+                        <a href="{{ url_for('edit_words', supportive_words_id=word._id) }}" class="waves-effect waves-light btn"><i class="fas fa-edit right"></i>Edit</a>  
                         <a class="waves-effect waves-light btn"><i class="fas fa-trash-alt right"></i>Delete</a>
                     </div>
                 </div>

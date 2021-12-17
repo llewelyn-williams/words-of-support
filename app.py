@@ -128,6 +128,33 @@ def add_words(topic):
     return render_template("add-words.html", topic=topic, topic_id=topic_id)
 
 
+@app.route("/edit-words/<supportive_words_id>", methods=["GET", "POST"])
+def edit_words(supportive_words_id):
+    """
+    Display the edit supportive words page.
+    Handle update functionality to supportive words.
+    """
+
+    user = session["user"]
+
+    if request.method == "POST":
+        submit = {"$set": {
+            "words": request.form.get("words")
+        }}
+        mongo.db.supportive_words.update_one(
+            {"_id": ObjectId(supportive_words_id)}, submit)
+        flash("Words Updated")
+
+        return redirect(url_for('edit_words', supportive_words_id=supportive_words_id))
+
+    supportive_words = mongo.db.supportive_words.find_one(
+        {"_id": ObjectId(supportive_words_id)})
+
+    return render_template("edit-words.html",
+                           supportive_words=supportive_words,
+                           user=user)
+
+
 @app.route("/add-topic", methods=["GET", "POST"])
 def add_topic():
     """
